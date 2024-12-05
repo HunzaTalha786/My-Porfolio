@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import 'utilities.css';
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+.caveat-uniquifier {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Caveat", cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --primaryy:  rgb(0, 59, 50);
+    --bgDark: rgb(12, 12, 12);
+    --white: rgb(250, 250, 250);
+    --secondary:rgb(29, 221, 154);
+    --bgLight: rgb(190, 181, 181);
+}
+
+.bg {
+    background-color: var(--primaryy);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    background-color: var(--bgDark);
+
+}
+nav{
+    position: fixed;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.containerr {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+    justify-content: space-around;
+    gap: 2rem
+}
+
+a{
+    text-decoration: none !important;
+    color: var(--bgLight) !important;
+}
+a h1{
+    color: aqua;
+}
+a:hover{
+    color: aqua !important;
+}
+.btnn {
+    font-size: 1rem;
+    font-family: caveat;
+    font-weight: 800;
+    padding: 0.5rem;
+    border: 3px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .2s ease;
+   
+}
+.btnn-secondary {
+    background: transparent;
+    color: var(--secondary);
+    border-color:var(--bgLight) ;
+}
+
+.btnn-secondary:hover {
+    border-color:aqua;
+}
+
+
+/* hero section */
+.hero h2 {
+    font-size: 2rem;
+    color: var(--bgLight);
+    margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+    color: var(--primaryy);
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero h2 span {
+    color: var(--primaryy);
+}
+
+.hero p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    color: var(--bgLight);
+}
+.btnn-primary {
+    background-color: var(--primaryy);
+    color: var(--secondary);
+}
+
+.btnn-primary:hover {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--bgLight);
+}
+
+.mp {
+    background: var(--bgDark);
+    gap: 30px;
+}
+
+.cntnt {
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1200px) {
+    .containerr {
+        max-width: 900px;
+    }
+
+    .hero .left img {
+        width: 300px;
+    }
+
+    .hero .right {
+        margin-top: -5rem;
+    }
+}
+.skill {
+	margin-top: 3rem;
+    margin-bottom: 3rem;
+	font-size: 17px;
+}
+.skills h2{
+    font-size: 3rem;
+}
+.skill span {
+	float: right;
+}
+
+.skill div {
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+	background: #e7e7e7;
+	border-radius: 10px;
+}
+
+.skill div span {
+	background:aqua;
+	height: 5px;
+	float: left;
+}
+#demo {
+    color: #fff;
+    font-weight: 1000;
+
+}
+.btn-view-projects{
+    padding: 0.5rem;
+    color: var(--bgLight);
+    background-color: var(--bgDark);
+    border: 2px solid var(--bgLight);
+    font-style: italic;
+}
+.containerr h4{
+    color: aqua;
+
+}
+body{
+    animation: transitionIn 1s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+
+    }
+
+}
